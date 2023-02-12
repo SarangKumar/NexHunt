@@ -7,7 +7,8 @@ import Bear from '../../components/Bear'
 
 import { BsFillTrophyFill } from 'react-icons/bs'
 
-import board from '../../styles/leaderBoard.module.css'
+import board from '../../styles/LeaderBoard.module.css'
+
 import Image from "next/image";
 
 export default function Scoreboard() {

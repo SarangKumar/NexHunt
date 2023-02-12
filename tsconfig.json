@@ -39,7 +39,7 @@
     "src/pages/_document.jsx",
     "app/page.jsx",
     ".next/types/**/*.ts"
-, "app/not-found.jsx", "app/layout.jsx"  ],
+, "app/not-found.jsx", "app/layout.jsx", "app/scoreboard/page.jsx", "components/PreEvent.jsx"  ],
   "exclude": [
     "node_modules"
   ]
