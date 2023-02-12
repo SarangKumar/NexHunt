@@ -1,0 +1,230 @@
+/* .main_comp_score {
+    max-width: 40rem;
+
+    margin: 5rem 10vw 30px;
+    padding: 1em;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    border-radius: 20px;
+    background-image: linear-gradient(#04619f, #009ffd);
+    background-color: #fff;
+    filter: blue(12px);
+}
+
+.team_detail_container {
+    position: relative;
+}
+
+.team_detail_rank {
+    position: absolute;
+    top: 0.2rem;
+    left: 0.5rem;
+    background-color: #00112F;
+    color: #fff;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team_score_details {
+    padding: 0.5rem;
+    margin: 1rem 0 1rem 0.5rem;
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+}
+
+.score_board_banner {
+    background-color: #0B5693;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: -1rem;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.score_board_banner svg {
+    font-size: 2rem;
+}
+
+.score_board_banner h1 {
+    font-size: 2.2rem;
+}
+
+.team_name {
+    font-size: 1.1rem;
+}
+
+.team_ranking {
+    margin: 2rem 0;
+}
+
+.team_name {
+    padding-left: 2rem;
+
+}
+
+.team_detail_score {
+    min-width: 4rem;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: .3rem 2rem;
+    border-radius: 50px;
+    background-color: #e2e2e2;
+
+} */
+
+.main_comp_score {
+    /* padding: 1em;
+    z-index: 1;
+    border-radius: 20px;
+    background-color: transparent;
+    filter: blue(12px);
+    display: flex;
+    border: 2px solid #fff;
+    flex-direction: column; */
+    
+
+    margin: 5rem 10vw 30px;
+    padding: 1em;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    border-radius: 20px;
+    /* background-image: linear-gradient(#04619f, #009ffd); */
+    /* background-color: #fff; */
+    filter: blue(12px);
+}
+
+/* ------------------------------------------------------ */
+.top {
+    /* border: 2px solid #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: nowrap;
+    margin: 3rem 0;
+}
+
+.top_container {
+    width: 15rem;
+    height: 15rem;
+    border: 2px solid #fff;
+    border-radius: 2rem;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+.top_rank {
+    position: absolute;
+    bottom: 1.5rem;
+    left: -1.5rem;
+    background-color: #006cfa;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* #04619f */
+
+
+.top_trophy {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.top_trophy:nth-child(1) {
+    color: #FFD700;
+}
+
+.top_trophy:nth-child(2) {
+    color: #C0C0C0;
+}
+
+.top_trophy:nth-child(3) {
+    color: #CD7F32;
+}
+
+
+
+
+
+/* ------------------------------------------------------ */
+.bottom {
+    margin-top: 3rem;
+    /* border: 2px solid #fff; */
+    /* font-family: 'Ubuntu', sans-serif; */
+}
+
+.team_detail_container {
+    background-color: #fff;
+    margin-bottom: 0.2rem;
+    border-radius: 0.5rem;
+    padding: 1rem 1rem;
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+    /* grid-column-gap: 1rem; */
+    /* grid-row-gap: 10rem; */
+}
+
+.team_detail_container .team_detail_rank {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5rem;
+}
+.team_score_details {
+    /* padding: 0.2rem 1rem; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Raleway', sans-serif;
+}
+
+.team_name p{
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 0.1rem 0;
+
+}
+
+.team_mem_names{
+    display: flex;
+    gap: 1.2rem;
+    font-size: 0.8rem;
+    color: #333;
+}
+
+.team_member{
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+
+/* font-family: 'Fauna One', serif; */
+/* font-family: 'Julius Sans One', sans-serif; */
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Nunito', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'PT Serif', serif; */
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Ubuntu', sans-serif; */
+/* font-family: 'Raleway', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Rufina', serif; */

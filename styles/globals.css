@@ -23,15 +23,15 @@ code {
   background-color: #04619f;
 }
 
-.nav_unlisted{
-   text-decoration: none;
-  display:"flex";
-  align-items:"center";
-  justify-content:"center";
-  margin:"3px";
+.nav_unlisted {
+  text-decoration: none;
+  display: "flex";
+  align-items: "center";
+  justify-content: "center";
+  margin: "3px";
 }
 
-.link_style{
+.link_style {
   align-items: "center";
   justify-content: "center";
   text-decoration: "none";
@@ -417,7 +417,7 @@ code {
 /* --------------main comp----------------- */
 
 .main_comp {
-  margin: 0vh 10vw 30px;
+  margin: 5rem 10vw 30px;
   padding: 1em;
   color: rgb(0, 0, 0);
   z-index: 1;
@@ -805,7 +805,6 @@ code {
 
 .logincard_btn {
   background-color: #00112F;
-  color: #fff;
   text-decoration: none;
   width: 50%;
   margin: 20px;
@@ -819,8 +818,13 @@ code {
   border: 1px solid #00112F;
 }
 
-.logincard_btn .nav_links_comp .jBCfNe a {
+.logincard_btn_btn{
+  font-weight: bold;
+  font-family: Poppins;
+  border: none;
+  background-color: inherit;
   color: #fff;
+  pointer-events: none;
 }
 
 .login_link a {
@@ -835,9 +839,9 @@ code {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-.logincard_btn:hover .jBCfNe a,
-.logincard_btn:focus-within .jBCfNe a {
+.logincard_btn:hover .logincard_btn_btn{
   color: #00112F;
+  
 }
 
 .logincard_btn:hover {
@@ -847,7 +851,7 @@ code {
   border-radius: 10px 0 10px 0;
 }
 
-.login-alignment{
+.login-alignment {
   position: relative;
 }
 

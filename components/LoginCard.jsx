@@ -68,8 +68,7 @@ export default function LoginCard() {
                     </div>
                 </div>
                 <div className="logincard_btn_div">
-                    {/* <button className="logincard_btn"><NavLinks className="login_link" nav_href='/challenges'>Login</NavLinks></button> */}
-                    <button className="logincard_btn" type="submit">Login</button>
+                    <Link href='/challenges' className="logincard_btn"><button className='logincard_btn_btn' type="submit">Login</button></Link>
                 </div>
             </form>
         </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import pre from '../styles/preEvent.module.css'
+import pre from '../styles/PreEvent.module.css'
 
 const PreEvent = ({ days, hours, minutes, seconds }) => {
     return (
