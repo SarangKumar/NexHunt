@@ -7,7 +7,7 @@ import Bear from '../../components/Bear'
 
 import { BsFillTrophyFill } from 'react-icons/bs'
 
-import board from '../../styles/LeaderBoard.module.css'
+import board from '../../styles/leaderBoard.module.css'
 import Image from "next/image";
 
 export default function Scoreboard() {
@@ -120,27 +120,24 @@ const teamLeads = (teamName, score, index, members) => {
 
 const teamScoreDetail = (teamName, score, index, members) => {
 	return (
-		<>
-			<div className={board.team_detail_container} key={index}>
+		<div className={board.team_detail_container} key={index}>
 
-				<div className={board.team_detail_rank}>{index + 1}</div>
+			<div className={board.team_detail_rank}>{index + 1}</div>
 
-				<div className={board.team_score_details}>
-					<div className={board.team_name}>
-						<p>{teamName}</p>
-						<div className={board.team_mem_names}>
-							{members.map((member, i) => (
-								<span className={board.team_member}>{member}</span>
-							))}
-						</div>
-					</div>
-					<div className={board.team_detail_score}>
-						<b>{score} pts.</b>
+			<div className={board.team_score_details}>
+				<div className={board.team_name}>
+					<p>{teamName}</p>
+					<div className={board.team_mem_names}>
+						{members.map((member, i) => (
+							<span className={board.team_member}>{member}</span>
+						))}
 					</div>
 				</div>
-
+				<div className={board.team_detail_score}>
+					<b>{score} pts.</b>
+				</div>
 			</div>
-		</>
+		</div>
 	)
 }
 
