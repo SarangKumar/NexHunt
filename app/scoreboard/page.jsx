@@ -96,7 +96,7 @@ export default function Scoreboard() {
 
 const teamLeads = (teamName, score, index, members) => {
 	return (
-		<div className={board.top_container}>
+		<div className={board.top_container} key={index}>
 			<div className={board.top_rank}>{index + 1}</div>
 			<div className={board.top_board}>
 				<BsFillTrophyFill className={board.top_trophy} />
@@ -108,6 +108,7 @@ const teamLeads = (teamName, score, index, members) => {
 							<span className={board.top_team_member}>{member}</span>
 						))}
 					</div>
+					<div className={board.top_style} />
 				</div>
 			</div>
 		</div>
@@ -137,6 +138,7 @@ const teamScoreDetail = (teamName, score, index, members) => {
 						<b>{score} pts.</b>
 					</div>
 				</div>
+
 			</div>
 		</>
 	)
