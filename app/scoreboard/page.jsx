@@ -3,6 +3,7 @@
 import React from "react";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
+import Bear from '../../components/Bear'
 
 import { BsFillTrophyFill } from 'react-icons/bs'
 
@@ -43,22 +44,22 @@ export default function Scoreboard() {
 			score: 1
 		},
 		{
-			teamName: "Team 7",
+			teamName: "Marvels",
 			members: ["Name1", "Name2", "Name3", "Name3"],
 			score: 10
 		},
 		{
-			teamName: "Team 8",
+			teamName: "Joker",
 			members: ["Name1", "Name2", "Name3", "Name3"],
 			score: 30
 		},
 		{
 			teamName: "Team 9",
-			members: ["Name1", "Name2", "Name3", "Name3"],
+			members: ["A very Long Name", "A very Long Name", "A very Long Name", "A very Long Name"],
 			score: 5
 		},
 		{
-			teamName: "Team 10",
+			teamName: "Shanti",
 			members: ["Name1", "Name2", "Name3", "Name3"],
 			score: 0
 		}
@@ -71,41 +72,24 @@ export default function Scoreboard() {
 	const top_three = score_board.filter((item) => item.score != 0).slice(0, 3)
 
 	return (
-
-
-		// <div>
-		// 	<Header name="User Name" />
-		// 	<div className={board.main_comp_score}>
-
-		// 		{/* <Image src='https://www.shutterstock.com/image-vector/wolf-mascot-logo-design-esport-sport-1552267397' height={30} width={30} alt='dp'></Image> */}
-		// 		<div className={board.score_board_banner}>
-		// 			<BsFillTrophyFill />
-		// 			<h1>LEADERBOARD</h1>
-		// 		</div>
-		// 		<div className={board.team_ranking}>
-		// 			{score_board.map(({ teamName, score }, index) => (teamScoreDetail(teamName, score, index)))}
-		// 		</div>
-
-
-
-		// 	</div>
-		// 	<Footer />
-		// </div>
-
 		<>
 			<Header name="User Name" />
 			<div className={board.main_comp_score}>
+				<div className={board.nox_scoreboard} >
+					<Bear pupils="display_eyes" pupil_animate="eyes_peep" arm_animate="close_eyes" />
+				</div>
 				<div className={board.top}>
 					{top_three.map(({ teamName, score, members }, index) => (teamLeads(teamName, score, index, members)))}
 				</div>
 				<div className={board.bottom}>
-
+					<div className={board.banner}>
+						<p>LEADERBOARD</p>
+					</div>
 					{score_board.map(({ teamName, score, members }, index) => (teamScoreDetail(teamName, score, index, members)))}
 				</div>
 			</div>
 			<Footer />
 		</>
-
 	);
 }
 
@@ -116,10 +100,15 @@ const teamLeads = (teamName, score, index, members) => {
 			<div className={board.top_rank}>{index + 1}</div>
 			<div className={board.top_board}>
 				<BsFillTrophyFill className={board.top_trophy} />
-
-				{teamName}
-				{score}
-				{index}
+				<div className={board.top_detail_container}>
+					<p className={board.top_team_name}>{teamName}</p>
+					<p className={board.top_team_score}>{score}</p>
+					<div className={board.top_team_mem_names}>
+						{members.map((member, i) => (
+							<span className={board.top_team_member}>{member}</span>
+						))}
+					</div>
+				</div>
 			</div>
 		</div>
 	)
@@ -134,7 +123,7 @@ const teamScoreDetail = (teamName, score, index, members) => {
 			<div className={board.team_detail_container} key={index}>
 
 				<div className={board.team_detail_rank}>{index + 1}</div>
-				
+
 				<div className={board.team_score_details}>
 					<div className={board.team_name}>
 						<p>{teamName}</p>
@@ -142,7 +131,6 @@ const teamScoreDetail = (teamName, score, index, members) => {
 							{members.map((member, i) => (
 								<span className={board.team_member}>{member}</span>
 							))}
-	
 						</div>
 					</div>
 					<div className={board.team_detail_score}>

@@ -1,5 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
+import { useRouter } from 'next/router'
+
 import Footer from "../components/Footer";
 import LoginCard from "../components/LoginCard";
 import PreEvent from "../components/PreEvent";
@@ -7,6 +9,8 @@ import PreEvent from "../components/PreEvent";
 import { eventStart } from "../components/Time";
 
 export default function Login() {
+	// const router = useRouter();
+	
 	const [event, setEvent] = useState(false);
 	const [days, setDays] = useState(0);
 	const [hours, setHours] = useState(0);
@@ -35,13 +39,26 @@ export default function Login() {
 			if (d <= 0 && h <= 0 && m <= 0 && s <= 0) {
 				setEvent(true);
 			}
+
+			// if(!event){router.push('/')}
+
 		}, 1000);
 		return () => clearInterval(interval);
 	}, []);
 
+
+	// const click = () => {
+	// 	router.push({
+	// 	  pathname: "/test",
+	// 	  search: "?name=something",
+	// 	});
+	//   };
+
+
 	return event ? (
 		<div>
 			<LoginCard />
+			{/* <button onClick={click}>click me</button> */}
 			<Footer />
 		</div>
 	) : (

@@ -1,5 +1,5 @@
 //event starting time - in milliseconds
-export const eventStart = new Date('Feb 12, 2023 9:38:00').getTime();
+export const eventStart = new Date('Feb 12, 2023 14:15:00').getTime();
 // export const eventStart = new Date('Mar 3, 2023 16:00:00').getTime();
 
 //current time - in seconds
