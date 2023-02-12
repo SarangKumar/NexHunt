@@ -1,6 +1,7 @@
 import React from 'react'
 import pre from '../styles/PreEvent.module.css'
 
+
 const PreEvent = ({ days, hours, minutes, seconds }) => {
     return (
         <div className={pre.preEvent}>
