@@ -41,7 +41,7 @@ export default function Scoreboard() {
 		{
 			teamName: "Team 6",
 			members: ["Name1", "Name2", "Name3", "Name3"],
-			score: 1
+			score: 0
 		},
 		{
 			teamName: "Marvels",
@@ -51,7 +51,7 @@ export default function Scoreboard() {
 		{
 			teamName: "Joker",
 			members: ["Name1", "Name2", "Name3", "Name3"],
-			score: 30
+			score: 0
 		},
 		{
 			teamName: "Team 9",
@@ -61,7 +61,7 @@ export default function Scoreboard() {
 		{
 			teamName: "Shanti",
 			members: ["Name1", "Name2", "Name3", "Name3"],
-			score: 0
+			score: 90
 		}
 	]
 

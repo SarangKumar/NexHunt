@@ -25,16 +25,16 @@ code {
 
 .nav_unlisted {
   text-decoration: none;
-  display: "flex";
-  align-items: "center";
-  justify-content: "center";
-  margin: "3px";
+  /* display: flex;
+  align-items: center;
+  justify-content: "center"; */
+  margin: 3px;
 }
 
-.link_style {
-  align-items: "center";
-  justify-content: "center";
-  text-decoration: "none";
+.nav_unlisted .link_style {
+  align-items: center;
+  justify-content: center;
+  color: #fff;
 }
 
 .logincard_btn_div .nav_links_comp .nav_unlisted {
@@ -43,11 +43,11 @@ code {
 }
 
 .navbar_ribbon li .nav_links_comp ul a {
-  color: #fff;
+  /* color: #fff; */
 }
 
 .nav_links_comp .nav_unlisted a {
-  color: #01030D;
+  color: #fff;
 }
 
 .nav_links_comp:hover a {
@@ -417,7 +417,7 @@ code {
 /* --------------main comp----------------- */
 
 .main_comp {
-  margin: 5rem 10vw 30px;
+  margin: 2rem 10vw 30px;
   padding: 1em;
   color: rgb(0, 0, 0);
   z-index: 1;
@@ -454,6 +454,15 @@ code {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
   transition: all ease-out 500ms;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.card_nav_unlisted{
+    text-decoration: none;
+}
+
+.card_link_style {
+  text-decoration: "none";
+  color: #1F397D;
 }
 
 .card_ques_num {
@@ -722,7 +731,6 @@ code {
   overflow: hidden;
   width: 50%;
   height: 100%;
-  /* background-image: url("assets/images/login_sidepage.jpg"); */
   background-size: cover;
   border-radius: 10px;
   /* opacity: 0.9; */
@@ -818,7 +826,7 @@ code {
   border: 1px solid #00112F;
 }
 
-.logincard_btn_btn{
+.logincard_btn_btn {
   font-weight: bold;
   font-family: Poppins;
   border: none;
@@ -839,9 +847,9 @@ code {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-.logincard_btn:hover .logincard_btn_btn{
+.logincard_btn:hover .logincard_btn_btn {
   color: #00112F;
-  
+
 }
 
 .logincard_btn:hover {

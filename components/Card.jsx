@@ -5,18 +5,10 @@ import styled from "styled-components";
 
 
 export default function Card(props) {
-  const NavUnlisted = styled.ul`
-    text-decoration: none;
-  `;
-
-  const linkStyle = {
-    textDecoration: "none",
-    color: "#1F397D"
-  };
   return (
-    <NavUnlisted >
+    <div className='card_nav_unlisted' >
 
-      <Link href= {`\challenges\\${props.que_no}`} style={linkStyle}>
+      <Link href= {`\challenges\\${props.que_no}`} className="card_link_style">
         <div className="card_comp">
           <div>
             <div className="card_ques_num">Question {props.qnumber}</div>
@@ -27,6 +19,6 @@ export default function Card(props) {
           </div>
         </div>
       </Link>
-    </NavUnlisted>
+    </div>
   )
 }
